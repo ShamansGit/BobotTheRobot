@@ -1,0 +1,15 @@
+{
+    "info" : "use these to store any settings you need for the robot (e.g. voice type, speed etc.)",
+    "server" : {
+
+    },
+    "display" : {
+
+    },
+    "textToSpeech" : {
+
+    },
+    "settings" : {
+
+    }
+}
