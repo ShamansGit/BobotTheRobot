@@ -3,16 +3,25 @@ button {
 }
 h1 {
     font-family: 'Courier New', Courier, monospace;
-    background-color: red;
 }
 h2 {
     font-family: 'Courier New', 'Courier', monospace;
-    background-color: cyan;
 }
 p {
     font-family: 'Courier New', 'Courier', monospace;
-    color: green;
 }
-body{
-    background-color: black;
+
+.watermark {
+    font-family: 'Courier New', 'Courier', monospace;
+    font-size: 16px;
+    font-weight: bold;
+    position: sticky; 
+    text-align: center;
+    bottom: 0px;
+    background-color: 00d1c8;
+}
+
+.secret {
+    text-align: center;
+    background-color: crimson;
 }
