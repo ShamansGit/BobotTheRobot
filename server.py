@@ -28,8 +28,8 @@ class ServerHandler(BaseHTTPRequestHandler):
             file_to_open = "Redirecting..."
             #code 301 is the 'permanent redirect' code response.
             self.send_response(301)
-            self.send_header('Location','/controls/bobert.html')
-        elif self.path.startswith("/controls/") == False:
+            self.send_header('Location','/Website/bobert.html')
+        elif self.path.startswith("/Website/") == False:
             #Forbids access to non-website files outside the directory e.g. stuff in the data folder
             file_to_open = "Error 403: Forbidden."
             self.send_response(403)
