@@ -1,7 +1,6 @@
 #Code for handling setting up a local LAN server and networking etc.
 #Being worked on by: Joe
 
-import http.server
 from http.server import HTTPServer, BaseHTTPRequestHandler
 import socket
 
@@ -28,7 +27,7 @@ class ServerHandler(BaseHTTPRequestHandler):
             file_to_open = "Redirecting..."
             #code 301 is the 'permanent redirect' code response.
             self.send_response(301)
-            self.send_header('Location','/Website/bobert.html')
+            self.send_header('Location','/Website/bobot.html')
         elif self.path.startswith("/Website/") == False:
             #Forbids access to non-website files outside the directory e.g. stuff in the data folder
             file_to_open = "Error 403: Forbidden."
