@@ -1,0 +1,18 @@
+button {
+    font-family: 'Courier New', Courier, monospace;
+}
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: red;
+}
+h2 {
+    font-family: 'Courier New', 'Courier', monospace;
+    background-color: cyan;
+}
+p {
+    font-family: 'Courier New', 'Courier', monospace;
+    color: green;
+}
+body{
+    background-color: black;
+}
