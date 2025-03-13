@@ -2,13 +2,17 @@
 #Being worked on by: Joe
 
 from http.server import HTTPServer, BaseHTTPRequestHandler
+import socket
 
-#0.0.0.0 will make the website available for anyone on the local network on port 8765
-ADDRESS = ("0.0.0.0", 8765)
+#0.0.0.0 will make the website available for anyone on the local network on port 80
+#note: non-standard ports outside the range of 10~100 will be blocked by the network unless you use an ethernet connection.
+IPV4 = "0.0.0.0"
+PORT = 80
 
 def start_server():
     print("Starting Server...")
-    httpd = HTTPServer(ADDRESS,Serv)
+    httpd = HTTPServer((IPV4,PORT),Serv)
+    print("HTTP starting on Address:",socket.gethostbyname(socket.gethostname()),"Port:",PORT)
     httpd.serve_forever()
 
 #this class handles the HTTP server functionality
